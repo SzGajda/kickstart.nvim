@@ -284,6 +284,10 @@ require('lazy').setup({
             quit_on_open = true, -- Close tree when opening a file
           },
         },
+        git = {
+          enable = true,
+          ignore = false,
+        },
       }
       -- Map a key to toggle the file tree
       vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { desc = 'Toggle file tree' })
